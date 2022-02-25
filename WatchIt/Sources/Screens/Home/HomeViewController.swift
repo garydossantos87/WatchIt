@@ -69,21 +69,25 @@ public extension Home {
                 //            alertViewController.showStartSearch()
                 //            loadingView.isHidden = true
                 //            update(with: [], animate: true)
+                view.showLoading()
                 homeView.configure(model: Home.View.Model(movieModel: Home.View.TitleCollectionView.Model(title: "IDLE", collectionModel: [])))
             case .loading:
                 //            alertViewController.view.isHidden = true
                 //            loadingView.isHidden = false
                 //            update(with: [], animate: true)
+                view.showLoading()
                 homeView.configure(model: Home.View.Model(movieModel: Home.View.TitleCollectionView.Model(title: "LOADING", collectionModel: [])))
             case .failure:
                 //            alertViewController.view.isHidden = false
                 //            alertViewController.showDataLoadingError()
                 //            loadingView.isHidden = true
                 //            update(with: [], animate: true)
+                view.showLoading()
                 homeView.configure(model: Home.View.Model(movieModel: Home.View.TitleCollectionView.Model(title: "FAILURE", collectionModel: [])))
             case .success(let model):
                 //            alertViewController.view.isHidden = true
                 //            loadingView.isHidden = true
+                view.showLoading()
                 homeView.configure(model: model)
             }
         }

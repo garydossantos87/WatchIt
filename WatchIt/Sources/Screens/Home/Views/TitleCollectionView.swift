@@ -29,7 +29,7 @@ public extension Home.View {
             return label
         }()
                 
-        //MARK: - Init
+        // MARK: - Init
         
         init() {
             super.init(frame: .zero)

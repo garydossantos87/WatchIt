@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C164FE1527C8066A00A657AF /* GetTrendings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164FE1427C8066A00A657AF /* GetTrendings.swift */; };
+		C171304427C900BC002C955E /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171304327C900BC002C955E /* UIColor+Theme.swift */; };
+		C171304627C90551002C955E /* UIViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171304527C90551002C955E /* UIViewController+Helper.swift */; };
+		C171304827C90E5C002C955E /* UIView+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171304727C90E5C002C955E /* UIView+Loading.swift */; };
 		C175BBFF27C650DB00E2DD5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C175BBFE27C650DB00E2DD5B /* AppDelegate.swift */; };
 		C175BC0827C650DD00E2DD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C175BC0727C650DD00E2DD5B /* Assets.xcassets */; };
 		C175BC0B27C650DD00E2DD5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C175BC0927C650DD00E2DD5B /* LaunchScreen.storyboard */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		C164FE1427C8066A00A657AF /* GetTrendings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTrendings.swift; sourceTree = "<group>"; };
+		C171304327C900BC002C955E /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		C171304527C90551002C955E /* UIViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helper.swift"; sourceTree = "<group>"; };
+		C171304727C90E5C002C955E /* UIView+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Loading.swift"; sourceTree = "<group>"; };
 		C175BBFB27C650DB00E2DD5B /* WatchIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C175BBFE27C650DB00E2DD5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C175BC0727C650DD00E2DD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +106,31 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		C171303D27C8FFE4002C955E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C171303E27C8FFF1002C955E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C171304227C900A7002C955E /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C171304227C900A7002C955E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C171304327C900BC002C955E /* UIColor+Theme.swift */,
+				C171304527C90551002C955E /* UIViewController+Helper.swift */,
+				C171304727C90E5C002C955E /* UIView+Loading.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C175BBF227C650DB00E2DD5B = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +182,7 @@
 		C175BC2E27C6521700E2DD5B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C171303E27C8FFF1002C955E /* Shared */,
 				C175BC2F27C6522900E2DD5B /* Screens */,
 			);
 			path = Sources;
@@ -159,6 +191,7 @@
 		C175BC2F27C6522900E2DD5B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C171303D27C8FFE4002C955E /* Splash */,
 				C175BC3927C6808700E2DD5B /* Home */,
 				C175BC3527C662DB00E2DD5B /* TableViewCell.swift */,
 				C175BC3727C67D9900E2DD5B /* CollectionView.swift */,
@@ -342,7 +375,10 @@
 				C175BC3627C662DB00E2DD5B /* TableViewCell.swift in Sources */,
 				C175BBFF27C650DB00E2DD5B /* AppDelegate.swift in Sources */,
 				C198994327C7ED4D0093DC7F /* HomeViewModel.swift in Sources */,
+				C171304827C90E5C002C955E /* UIView+Loading.swift in Sources */,
+				C171304627C90551002C955E /* UIViewController+Helper.swift in Sources */,
 				C198993F27C7BBFD0093DC7F /* MovieCell.swift in Sources */,
+				C171304427C900BC002C955E /* UIColor+Theme.swift in Sources */,
 				C175BC3827C67D9900E2DD5B /* CollectionView.swift in Sources */,
 				C175BC3B27C6809C00E2DD5B /* HomeView.swift in Sources */,
 				C198993D27C7B48F0093DC7F /* HomeEntities.swift in Sources */,
